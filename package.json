@@ -1,0 +1,36 @@
+{
+  "name": "split-address",
+  "version": "1.0.0",
+  "description": "Split address into tow or more lines.",
+  "main": "index.js",
+  "scripts": {
+    "prepublishOnly": "tsc --module commonjs --target es2015 --declaration true --noImplicitThis true --noImplicitAny true index.ts",
+    "postpublish": "ls index.* | grep -v index.ts | xargs rm -f",
+    "pretest": "tsc --module commonjs --target es2015 test.ts",
+    "posttest": "rm -f test.js* && rm -f index.js*",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayonli/split-address.git"
+  },
+  "keywords": [
+    "split",
+    "address"
+  ],
+  "author": "A-yon Lee <the@ayon.li>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ayonli/split-address/issues"
+  },
+  "homepage": "https://github.com/ayonli/split-address#readme",
+  "devDependencies": {
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.20.55",
+    "mocha": "^5.2.0",
+    "typescript": "^4.9.5"
+  },
+  "engines": {
+    "node": ">=4.0"
+  }
+}
