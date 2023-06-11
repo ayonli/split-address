@@ -17,7 +17,7 @@ import splitAddress from "split-address";
 
 const address = "8352 E Main St, Alexandria, KY, United States";
 
-// FexEd restrict address line's length to be 36 characters if I remember
+// FedEx restricts address line's length to be 36 characters, if I remember
 // correctly.
 const lines1 = splitAddress(address, 36);
 // ["8352 E Main St, Alexandria, KY", "United States"]
