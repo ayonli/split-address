@@ -1,6 +1,6 @@
 {
   "name": "split-address",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Split address into tow or more lines.",
   "main": "index.js",
   "scripts": {

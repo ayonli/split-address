@@ -1,4 +1,4 @@
-export default function splitAddress(address: string, lineLimit: number) {
+export function splitAddress(address: string, lineLimit: number) {
     const processChunks = (chunks: string[], delimiter: ", " | " ") => {
         const lines: string[] = [];
         let line = "";
@@ -62,3 +62,5 @@ export default function splitAddress(address: string, lineLimit: number) {
         return lines;
     }
 }
+
+export default splitAddress;

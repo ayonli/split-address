@@ -13,7 +13,7 @@ recursively till all chunks are fit. This method should work in most cases.
 # For Example
 
 ```ts
-import splitAddress from "split-address";
+import { splitAddress } from "split-address";
 
 const address = "8352 E Main St, Alexandria, KY, United States";
 
@@ -29,7 +29,7 @@ const lines2 = splitAddress(address, 24);
 
 Or in Chinese
 ```ts
-import splitAddress from "split-address";
+import { splitAddress } from "split-address";
 
 const address1 = "中国 广东省 深圳市 南山区 科苑南路3009号中国储能大厦";
 const lines1 = splitAddress(address1, 20);
